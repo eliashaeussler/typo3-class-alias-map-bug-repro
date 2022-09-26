@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/schema/9.2.xsd"
+         backupGlobals="true"
+         bootstrap="vendor/typo3/testing-framework/Resources/Core/Build/UnitTestsBootstrap.php"
+         colors="true"
+>
+    <testsuites>
+        <testsuite name="default">
+            <directory>packages/test_extension/Tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

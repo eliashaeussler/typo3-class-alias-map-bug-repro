@@ -1,0 +1,35 @@
+{
+    "name": "eliashaeussler/test-extension",
+    "license": "GPL-2.0-or-later",
+    "type": "typo3-cms-extension",
+    "authors": [
+        {
+            "name": "Elias Häußler",
+            "email": "elias@haeussler.dev"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^11.5"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.28"
+    },
+    "autoload": {
+        "psr-4": {
+            "EliasHaeussler\\TestExtension\\": "Classes/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "typo3/cms-composer-installers": true,
+            "typo3/class-alias-loader": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "test_extension"
+        }
+    }
+}
